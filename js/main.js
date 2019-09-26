@@ -1,21 +1,21 @@
 $(() => {
   $('#stopButton').click(() => {
     console.log('stop button clicked')
-    reset()
+    clearLights()
     $('#stopLight').css({ backgroundColor: 'red' })
   })
 
   $('#slowButton').click(() => {
-    reset()
+    clearLights()
     $('#slowLight').css({ backgroundColor: 'yellow' })
   })
 
   $('#goButton').click(() => {
-    reset()
+    clearLights()
     $('#goLight').css({ backgroundColor: 'green' })
   })
 
-  function reset () {
-    $('.bulb').css({ backgroundColor: '#111' })
+  function clearLights () {
+    $('.bulb').css({ backgroundColor: 'black' })
   }
 })
